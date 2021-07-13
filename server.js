@@ -6,6 +6,7 @@ const cors = require('cors');
 const runner = require('./test-runner');
 
 const bodyParser = require('body-parser');
+app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
