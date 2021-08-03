@@ -26,7 +26,7 @@ suite("Functional Tests", function () {
         .get("/hello?name=naser")
         .end(function (err, res) {
           assert.equal(res.status, 200);
-          assert.equal(res.text, "hello " + res.body.name);
+          assert.equal(res.text, "hello naser");
           done();
         });
     });
